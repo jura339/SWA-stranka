@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cejl</title>
     <link rel="stylesheet" href="main.css">
+    <script type="importmap"></script>
 </head>
 <body>
 
@@ -14,7 +15,7 @@
     <a href="https://map.brnox.cz/" target="_self" id="brnox"></a>
 
 
-<!--Parallax effect-------------------------------------------------------------->
+<!--Parallax effect--------------------------------------------------------------
 <section>
     <img src="image\parralax\parallax1.png" id="para1" data-speed="0.4">
     <img src="image\parralax\parallax2.png" id="para2" data-speed="0.6">
@@ -28,6 +29,7 @@
 
 <!--Mapa------------------------------------------------------------------------->
 <div class="Mapa">
+    <canvas id="c"></canvas>
     <img src="">
     <a href="" target="_self" id="point1"><img src=""></a>
     <a href="" target="_self" id="point2"><img src=""></a>
@@ -37,4 +39,8 @@
 <!--Zahlavi---------------------------------------------------------------------->
 
 </body>
+
+<script type="module" src="main.js">
+</script>
+
 </html>
