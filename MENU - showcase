@@ -1,0 +1,107 @@
+HTML:
+<table>
+        <tr>
+            <th>
+                <a href="Hobbies.html" target="_self"> Koníčky     </a>  <a href="image\hobby logo.png" target="_blank"> <img src="image\hobby logo.png" alt="Hobby logo"></a>
+            </th>
+        
+            <td>
+                <div class="Menu">
+                    <img src="image\menu.png" alt="bar" id="menuImage">
+                    <div class="stranky">
+                        <a href="menu.html" target="_blank">Menu</a>
+                        <br>
+                        <a href="dovednosti.html" target="_blank">O mně</a>
+                        <br>
+                        <a href="galerie.html" target="_blank">Galerie<br></a>   
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+---------------------------------------------------------------------------------
+CSS:
+    table {
+        border: 0px;
+        width: 99vw;
+        max-height: 2vw;
+        min-height: 32px;
+        /*...........................*/
+        tr {
+            font-size: 30px;
+            /*...........................*/
+            th {
+            padding: 1%;
+            width: 90%;
+            text-align: left;
+            background-color: #00a542;
+            a {
+             color: #ffffff;
+             text-decoration: none;
+                }
+            a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ffffff;
+                }
+            img {
+                max-height: 2vw;
+                min-height: 30px;
+                }
+            }
+            /*...........................*/
+            td {
+                padding: 1%;
+                width: 10%;
+                text-align: right;
+                background-color: #00a542;
+                color: #ffffff;
+               }
+            .Menu {
+                display: inline-block;
+                position: relative;
+            }
+            .stranky {
+                right: 100%;
+                top: 0%;
+                text-align: center;
+                background-color: #00a542;
+                box-shadow: 0 4px 10px #00000080;
+                border-radius: 10px;
+                overflow: hidden;
+                height: 0;
+                display: block;
+                position: absolute;
+                margin-right: 10px;
+                visibility: hidden;
+                transition: height 0.3s ease;
+            }
+            .Menu:hover .stranky {
+                height: auto;
+                visibility: visible;
+                }
+            .stranky a {
+                height: auto;
+                font-size: 25px;
+                color: #ffffff;
+                text-decoration: none;
+                margin: 10px;
+                }
+            .stranky a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ffffff;
+                }
+            
+            img {
+                width: auto;
+                height: 2vw;
+                min-height: 30px;
+                transition: opacity 0.3s ease, height 0.5s ease-in-out, width 0.5s ease-in-out;
+                text-align: center;
+                }
+            .Menu:hover img {
+                opacity: 0;
+                height: 0px;
+                width: 0px;
+            }
+        }
+    }
