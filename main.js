@@ -28,7 +28,7 @@ document.addEventListener('scroll', function () {
 //zmena obrazku
 //-------------------------------------------------------
 //menu---------------------------------------------------
-<script>
+
     function toggleMenu() {
         var menu = document.getElementById("menu");
         menu.classList.toggle("active");
@@ -42,4 +42,3 @@ document.addEventListener('scroll', function () {
             menu.classList.remove("active");
         }
     });
-</script> 
