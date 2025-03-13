@@ -20,17 +20,17 @@ section img {
 /*---------------------------*/
 .Mapa {
     display: flex;
-    background-color: #0d0c1a;
-  
-    
-    position: relative;
+    background-color: #10101a;
+    position: absolute;
     width: 100vw;
-    
     height: 200vh;
+    /*transform: translateX(-20%);*/
+    
     object-position: center;
-    top: 100vh;
-    z-index: 2;
+    top: 141px;
+    z-index: 10000;
 }
+
 /*Menu ---------------------------*/
 * {
     margin: 0;
