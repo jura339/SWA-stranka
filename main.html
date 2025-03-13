@@ -5,42 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cejl</title>
     <link rel="stylesheet" href="main.css">
-    <script type="importmap"></script>
 </head>
 <body>
 
-<!--Upper Menu------------------------------------------------------------------->
-    <a href="" target="_self" id="gallery"></a>
-    <a href="" target="_self" id="devs"></a>
-    <a href="https://map.brnox.cz/" target="_self" id="brnox"></a>
+<!--Upper Menu-------------------------------------------------------------------><table>
+        <tr>
+            <th>
+                <a href="" target="_self"> Koníčky     </a>  <a href="" target="_blank"> <img src="" alt=""></a>
+            </th>
+        
+            <td>
+                <div class="Menu">
+                    <img src="image\menu.png" alt="bar" id="menuImage">
+                    <div class="stranky">
+                        <a href="" target="_self" id="gallery">Galerie</a>
+                        <br>
+                        <a href="" target="_self" id="devs">Tým</a>
+                        <br>
+                        <a href="https://map.brnox.cz/" target="_self" id="brnox">Brnox</a>  
+                        <br>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    
 
 
-<!--Parallax effect--------------------------------------------------------------
+<!--Parallax effect-------------------------------------------------------------->
 <section>
-    <img src="image\parralax\parallax1.png" id="para1" data-speed="0.4">
-    <img src="image\parralax\parallax2.png" id="para2" data-speed="0.6">
-    <img src="image\parralax\parallax3.png" id="para3" data-speed="0.8">
-    <img src="image\parralax\parallax4.png" id="para4" data-speed="1.0">
-    <img src="image\parralax\parallax5.png" id="para5" data-speed="1.2">
-    <img src="image\parralax\parallax6.png" id="para6" data-speed="1.4">
-    <img src="image\parralax\parallax7.png" id="para7" data-speed="1.6">
-    <img src="image\parralax\parallax8.png" id="para8" data-speed="1.8">
+    <img src="image\parralax\1_270.png" id="para1" data-speed="0.4">
+    <img src="image\parralax\2_186.png" id="para2" data-speed="0.6">
+    <img src="image\parralax\3_139.png" id="para3" data-speed="0.8">
+    <img src="image\parralax\4_92.png" id="para4" data-speed="1.0">
+    <img src="image\parralax\5.png" id="para5" data-speed="1.2">
+    <img src="image\parralax\6.png" id="para6" data-speed="1.4">
+    <!--Mapa------------------------------------------------------------------------->
+    <div class="Mapa">
+        <a href="http://127.0.0.1:5500/3Dmain.html" id="Mapa"><img src=""></a>
+        <!--a href="3Dmain.html" target="_self" id="point1"><img src=""></a>
+        <a href="" target="_self" id="point2"><img src=""></a>
+        <a href="" target="_self" id="point3"><img src=""></a-->
+    </div>
 </section>
 
-<!--Mapa------------------------------------------------------------------------->
-<div class="Mapa">
-    <canvas id="c"></canvas>
-    <img src="">
-    <a href="" target="_self" id="point1"><img src=""></a>
-    <a href="" target="_self" id="point2"><img src=""></a>
-    <a href="" target="_self" id="point3"><img src=""></a>
-</div>
+
 
 <!--Zahlavi---------------------------------------------------------------------->
 
 </body>
-
-<script type="module" src="main.js">
-</script>
-
+<script src="main.js"></script>
 </html>
