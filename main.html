@@ -9,26 +9,33 @@
 <body>
 
 <!--Upper Menu-------------------------------------------------------------------><table>
-        <tr>
-            <th>
-                <a href="" target="_self"> Koníčky     </a>  <a href="" target="_blank"> <img src="" alt=""></a>
-            </th>
-        
-            <td>
-                <div class="Menu">
-                    <img src="image\menu.png" alt="bar" id="menuImage">
-                    <div class="stranky">
-                        <a href="" target="_self" id="gallery">Galerie</a>
-                        <br>
-                        <a href="" target="_self" id="devs">Tým</a>
-                        <br>
-                        <a href="https://map.brnox.cz/" target="_self" id="brnox">Brnox</a>  
-                        <br>
-                    </div>
-                </div>
-            </td>
-        </tr>
-    </table>
+<nav class="navbar">
+    <h2>Průvodce po cejlu</h2>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+</nav>
+<div class="menu" id="menu">
+    <ul>
+        <li><a href="" target="_self" id="gallery">Galerie</a></li>
+        <li><a href="" target="_self" id="devs">Domů</a></li>
+        <li><a href="" target="_self" id="brnox">Brno mapa</a></li>
+    </ul>
+</div>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+
+    // Zavření menu při kliknutí mimo něj
+    document.addEventListener("click", function(event) {
+        var menu = document.getElementById("menu");
+        var menuIcon = document.querySelector(".menu-icon");
+        if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+            menu.classList.remove("active");
+        }
+    });
+</script>      
     
 
 
