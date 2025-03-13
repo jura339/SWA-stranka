@@ -27,3 +27,19 @@ document.addEventListener('scroll', function () {
 //-------------------------------------------------------
 //zmena obrazku
 //-------------------------------------------------------
+//menu---------------------------------------------------
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+
+    // Zavření menu při kliknutí mimo něj
+    document.addEventListener("click", function(event) {
+        var menu = document.getElementById("menu");
+        var menuIcon = document.querySelector(".menu-icon");
+        if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+            menu.classList.remove("active");
+        }
+    });
+</script> 
