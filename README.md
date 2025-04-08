@@ -9,3 +9,5 @@ main.js         -    hlavni js pro rendering 3D (nutnost doinstalovat three.js, 
 
 
 mapa s leaflet.js
+
+odkaz na web: https://adidas-lol.github.io/BrnoX3D/
